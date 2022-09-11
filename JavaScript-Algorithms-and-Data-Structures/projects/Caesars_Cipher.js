@@ -1,23 +1,17 @@
 
 function rot13(str) {
 
-    str = str.toUpperCase();
-    let arr = str.split('');
+    let result = [];
 
-    for (let i = 0; i > arr.length; i++) {
-        let charLetter = arr[i];
-        if (charLetter.match(/[A-Z]/g)){
-            charValue = arr[i].charCodeAt();
-                if (charValue <= 'N'.charCodeAt()) {
-                    charChange = (charValue + 13);
-                }
-                else {
-                    charChange = (charValue - 13);
-                }
-            }
-            let result = result.push(charChange);
-        }
-        return result.join('')
+    let abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    let key = "NOPQRSTUVWXYZABCDEFGHIJKLM"
+    
+    for (let char of str) {
+        let index = abc.indexOf(char)
+        result += index >= 0 ? key[index] : char 
+        
+    }
+    return result
 }
 
 rot13("SERR PBQR PNZC");
