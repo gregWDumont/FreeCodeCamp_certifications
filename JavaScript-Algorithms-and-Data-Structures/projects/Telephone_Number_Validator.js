@@ -1,6 +1,9 @@
 function telephoneCheck(str) {
-
-    return str;
+    let result;
+    const phoneRegex = /(\d{3}-?\s?\d{3}-?\s?\d{4}\s?)?(x\d{4})?/;
+    if (result = str.match(phoneRegex)) {
+        return true
+    }
   }
   
   telephoneCheck("555-555-5555");
