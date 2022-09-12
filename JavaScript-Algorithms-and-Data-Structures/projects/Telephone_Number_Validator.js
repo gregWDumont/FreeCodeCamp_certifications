@@ -1,8 +1,9 @@
 function telephoneCheck(str) {
-    let result;
+    let result = true;
     const phoneRegex = /(\d{3}-?\s?\d{3}-?\s?\d{4}\s?)?(x\d{4})?/;
-    if (result = str.match(phoneRegex)) {
-        return true
+    const phoneRegexAlt = /(\(\d{3}-?\)\s?\d{3}-?\s?\d{4}\s?)?(x\d{4})?/;
+    if (result = str.match(phoneRegex) || result = str.match(phoneRegexAlt)) {
+        return result
     }
   }
   
