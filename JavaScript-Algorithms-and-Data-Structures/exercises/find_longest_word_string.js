@@ -7,10 +7,8 @@ function findLongestWordLength(str) {
       if (words[i].length > maxLength) {
         maxLength = words[i].length;
       }
-      return maxLength
     }
-  
-    return str.length;
+    return maxLength
   }
   
   findLongestWordLength("The quick brown fox jumped over the lazy dog");
