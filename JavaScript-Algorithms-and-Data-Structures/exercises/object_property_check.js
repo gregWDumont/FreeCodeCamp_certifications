@@ -34,8 +34,8 @@ let users = {
 // Solution 2
 
 function isEveryoneHere(userObj) {
-    return ["Alan", "Jeff", "Sarah", "Ryan"].every(name =>
-      userObj.hasOwnProperty(name)
+    return ["Alan", "Jeff", "Sarah", "Ryan"].every(anyWord =>
+      userObj.hasOwnProperty(anyWord)
     );
   }
   
