@@ -5,3 +5,5 @@ Description: "While HTML and CSS control the content and styling of a page, Java
 Once you have the fundamentals down, you'll apply that knowledge by creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station.
 
 Along the way, you'll also learn two important programming styles or paradigms: Object-Oriented Programming (OOP) and Functional Programming (FP)."
+
+[Link to the certification](to be published soon)
