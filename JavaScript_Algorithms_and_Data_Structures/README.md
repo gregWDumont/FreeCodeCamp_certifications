@@ -6,4 +6,4 @@ Once you have the fundamentals down, you'll apply that knowledge by creating alg
 
 Along the way, you'll also learn two important programming styles or paradigms: Object-Oriented Programming (OOP) and Functional Programming (FP)."
 
-[Link to the certification](to be published soon)
+[Link to the certification](https://www.freecodecamp.org/certification/Reggroy/javascript-algorithms-and-data-structures)
