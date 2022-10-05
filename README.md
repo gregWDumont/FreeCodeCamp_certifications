@@ -14,5 +14,5 @@ FYI: I keep the exercises as reminder | for later purpose while the projects are
 
 ### data analysis
 
-- Scientific Computing with Python Certification
+- Scientific Computing with Python
 
