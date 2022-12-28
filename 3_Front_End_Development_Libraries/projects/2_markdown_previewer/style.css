@@ -1,11 +1,44 @@
-#container {
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+
+html, body {
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #353535;
 }
 
 .box {
     height: 75vh;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.markdown-text {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.html-text {
+  font-family: 'Andika', sans-serif;
+}
+
+#container-html {
+  background-color: #e34c26 ;
+}
+
+#preview {
+  background-color: #f06529 ;
+}
+
+code {
+  background-color: #353535;
+  padding: 0.2rem;
+}
+
+.html-text a {
+  color: #fff;
+  font-weight: bold;
 }

@@ -1,43 +1,87 @@
 function App() {
 
-    const [markdownText, setMarkdownText] = React.useState("When my markdown previewer first loads, the default text in the #editor field should contain valid markdown that represents at least one of each of the following elements: a heading element (H1 size), a sub heading element (H2 size), a link, inline code, a code block, a list item, a blockquote, an image, and bolded text.")
+    const [markdownText, setMarkdownText] = React.useState(`
+# Type your markdown text here
+
+
+--- 
+
+## Use the markdown styles displayed below to see the result translated into an HTML format
+
+here is a [link](https://commonmark.org/help/) with basics markdown styling methods.
+
+We use [marked-react](https://github.com/sibiraj-s/marked-react) to automatically parse our markdown input into HTML (kudos to the team!).
+
+This markdown previewer uses the [GitHub Flavored Markdown Spec](https://github.github.com/gfm/).
+
+* You can 
+* write down 
+* a list of items
+
+### You can also integrate your code directly within the text
+
+\`Inline code\` with backticks 
+
+or even code blocks as below:
+
+\`\`\`
+# code block
+print '3 backticks or'
+print 'indent 4 spaces'
+\`\`\` 
+
+`)
+
+React.useEffect(() => {
+    [textToMarkdown(), markdownText]
+})
+
     const [markdowned, setMarkdowned] = React.useState("")
+
+
 
     const handleChange = (e) => {
         setMarkdownText(e.target.value)
         textToMarkdown()
     }
 
+    // https://marked.js.org/using_advanced
+    marked.setOptions({
+        gfm: true,
+        breaks: true,
+        xhtml: true
+      });
+
     const textToMarkdown = () => {
-        console.log('here')
         setMarkdowned(marked.parse(markdownText));
-        return dangerouslySetInnerHTML={ __html: markdowned };
     }
 
     return (
         
-        <div className="row">
-            <h1 className="text-center m-4">Convert your markdown</h1>
-            <div className="col-6 border bg-danger">
-                <h5 className="text-center">
+        <div className="row jumbotron">
+            <h1 className="text-center mt-4 text-light fw-bold text-decoration-underline">Markdown Previewer</h1>
+            <h2 className="text-center mb-4 text-light fw-bold text-decoration-underline">Free Code Camp Project</h2>
+            <div className="col-1"></div>
+            <div className="col-5 border border-dark bg-dark rounded">
+                <h3 className="text-center text-light fw-bold">
                     Markdown:
-                </h5>
+                </h3>
                 <textarea 
                 onChange={handleChange} 
-                value={markdownText} 
+                defaultValue={markdownText} 
                 id="editor"
-                className="border-danger container-fluid box"/>
+                className="container-fluid box bg-secondary text-light markdown-text p-2"/>
             </div>
             <div 
-            className="col-6 border bg-warning">
-                <h5 className="text-center">
+            className="col-5 border border-light rounded text-light ms-4" id="container-html">
+                <h3 className="text-center fw-bold">
                     HTML:
-                </h5>
+                </h3>
                 <div id="preview" 
-                className="border border-info rounded p-1 container-fluid box bg-light">
-                    {markdowned}
-                </div>
+                className="border border-light rounded p-2 container-fluid box html-text"
+                dangerouslySetInnerHTML={{ __html: markdowned }}/>
             </div>
+            <div className="col-1"></div>
         </div>
     )
 }
