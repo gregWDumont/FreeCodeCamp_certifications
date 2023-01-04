@@ -33,7 +33,7 @@ print 'indent 4 spaces'
 `)
 
 React.useEffect(() => {
-    [textToMarkdown(), markdownText]
+    textToMarkdown()
 })
 
     const [markdowned, setMarkdowned] = React.useState("")
@@ -46,13 +46,8 @@ React.useEffect(() => {
     }
 
     // https://marked.js.org/using_advanced
-    marked.setOptions({
-        gfm: true,
-        breaks: true,
-        xhtml: true
-      });
-
     const textToMarkdown = () => {
+        marked.setOptions({breaks: true})
         setMarkdowned(marked.parse(markdownText));
     }
 
