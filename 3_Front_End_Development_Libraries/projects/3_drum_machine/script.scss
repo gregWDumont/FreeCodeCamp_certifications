@@ -1,0 +1,45 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #72b7b3;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#display {
+    @include center;
+    margin: auto;
+    flex-direction: column;
+    width: 100vw;
+
+
+    .pad-container {
+        width: 320px;
+
+        .clip {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #display {
+        width: 80vw;
+    
+        .pad-container {
+            width: 320px;
+    
+            .clip {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
