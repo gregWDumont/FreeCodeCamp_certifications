@@ -1,4 +1,6 @@
-# Objective: Build an app that is functionally similar to [this](https://markdown-previewer.freecodecamp.rocks/)
+# Mardown Previewer
+
+## Objective: Build an app that is functionally similar to [this](https://markdown-previewer.freecodecamp.rocks/)
 
 ## Live version [here](https://codepen.io/reggr0y/pen/QWBbbaL)
 

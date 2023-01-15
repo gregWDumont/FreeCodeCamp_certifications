@@ -1,4 +1,6 @@
-# Objective: Build an app that is functionally similar to [this](https://random-quote-machine.freecodecamp.rocks/)
+# Random Quote Machine
+
+## Objective: Build an app that is functionally similar to [this](https://random-quote-machine.freecodecamp.rocks/)
 
 ## Live version [here](https://codepen.io/reggr0y/pen/abjzxLz)
 

@@ -1,0 +1,114 @@
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html, body {
+    @include center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(126, 72, 72);
+    color: orange;
+
+    .container {
+        margin-top: -300px;
+
+        h1 {
+            color: white;
+            font-size: 35px;
+            text-shadow: 2px 2px black;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 150px;
+        }
+
+        .calculator {
+            @include center;
+            flex-direction: column;
+            background-color: black;
+            border: 4px solid black;
+            width: 360px;
+            height: 500px;
+            padding: 0;
+        
+        
+            #input-container {
+                width: 100%;
+                border: solid 4px black;
+                text-align: end;
+                padding-right: 10px;
+        
+                #input-text {
+                    background-color: black;
+                    font-size: small;
+                    
+                }
+        
+                #input-result {
+                    color: white;
+                    font-size: 25px;
+                }
+            }
+        
+            .data-entry {
+                flex-wrap: wrap;
+                padding: 10px;
+                @include center;
+
+                button {
+                    background-color: #4d4d4d;
+                    border: solid 1px black;
+                    width: 80px;
+                    height: 80px;
+                    color: white;
+                }
+
+                .btn:hover {
+                    background-color: black;
+                }
+
+                #btn-top-row {
+                    top: 0;
+
+                    #AC, #C {
+                        background-color: rgb(172, 57, 57);
+                    }
+
+                    #divide, #x {
+                        background-color: rgb(102, 102, 102);
+                    }
+                }
+
+                #number-pad {
+                    width: 240px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+
+                    .btn:nth-child(10) {
+                        width: 160px;
+                    }
+
+                }
+
+                #btn-right-column {
+                    display: flex;
+                    flex-direction: column;
+                    float: right;
+
+                    #equal {
+                        height: 160px;
+                        background: rgb(0, 68, 102);
+                    }
+
+                    #add, #minus {
+                        background-color: rgb(102, 102, 102);
+                    }
+                }
+            }
+        }
+    }
+}

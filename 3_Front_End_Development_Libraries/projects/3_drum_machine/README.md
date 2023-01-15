@@ -1,4 +1,6 @@
-# Objective: Build an app that is functionally similar to this: https://drum-machine.freecodecamp.rocks/
+# Drum Machine
+
+## Objective: Build an app that is functionally similar to this: https://drum-machine.freecodecamp.rocks/
 
 ## [Live version](https://codepen.io/reggr0y/pen/XWBXLqM)
 

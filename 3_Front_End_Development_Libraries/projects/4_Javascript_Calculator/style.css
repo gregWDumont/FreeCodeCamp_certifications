@@ -1,0 +1,94 @@
+html, body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(126, 72, 72);
+  color: orange;
+}
+html .container, body .container {
+  margin-top: -300px;
+}
+html .container h1, body .container h1 {
+  color: white;
+  font-size: 35px;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 150px;
+}
+html .container .calculator, body .container .calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  border: 4px solid black;
+  width: 360px;
+  height: 500px;
+  padding: 0;
+}
+html .container .calculator #input-container, body .container .calculator #input-container {
+  width: 100%;
+  border: solid 4px black;
+  text-align: end;
+  padding-right: 10px;
+}
+html .container .calculator #input-container #input-text, body .container .calculator #input-container #input-text {
+  background-color: black;
+  font-size: small;
+}
+html .container .calculator #input-container #input-result, body .container .calculator #input-container #input-result {
+  color: white;
+  font-size: 25px;
+}
+html .container .calculator .data-entry, body .container .calculator .data-entry {
+  flex-wrap: wrap;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html .container .calculator .data-entry button, body .container .calculator .data-entry button {
+  background-color: #4d4d4d;
+  border: solid 1px black;
+  width: 80px;
+  height: 80px;
+  color: white;
+}
+html .container .calculator .data-entry .btn:hover, body .container .calculator .data-entry .btn:hover {
+  background-color: black;
+}
+html .container .calculator .data-entry #btn-top-row, body .container .calculator .data-entry #btn-top-row {
+  top: 0;
+}
+html .container .calculator .data-entry #btn-top-row #AC, html .container .calculator .data-entry #btn-top-row #C, body .container .calculator .data-entry #btn-top-row #AC, body .container .calculator .data-entry #btn-top-row #C {
+  background-color: rgb(172, 57, 57);
+}
+html .container .calculator .data-entry #btn-top-row #divide, html .container .calculator .data-entry #btn-top-row #x, body .container .calculator .data-entry #btn-top-row #divide, body .container .calculator .data-entry #btn-top-row #x {
+  background-color: rgb(102, 102, 102);
+}
+html .container .calculator .data-entry #number-pad, body .container .calculator .data-entry #number-pad {
+  width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+html .container .calculator .data-entry #number-pad .btn:nth-child(10), body .container .calculator .data-entry #number-pad .btn:nth-child(10) {
+  width: 160px;
+}
+html .container .calculator .data-entry #btn-right-column, body .container .calculator .data-entry #btn-right-column {
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+html .container .calculator .data-entry #btn-right-column #equal, body .container .calculator .data-entry #btn-right-column #equal {
+  height: 160px;
+  background: rgb(0, 68, 102);
+}
+html .container .calculator .data-entry #btn-right-column #add, html .container .calculator .data-entry #btn-right-column #minus, body .container .calculator .data-entry #btn-right-column #add, body .container .calculator .data-entry #btn-right-column #minus {
+  background-color: rgb(102, 102, 102);
+}/*# sourceMappingURL=style.css.map */
