@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+// https://colordesigner.io/#2E0927-D90000-FF2D00-FF8C00-04756F
+
 @mixin center {
     display: flex;
     align-items: center;
@@ -14,12 +16,13 @@ html, body {
     padding: 0;
     background-color: rgb(46, 9, 39);
     font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 140, 0);
 
     .container {
         margin-top: -300px;
 
         h1 {
-            color: white;
+
             font-size: 35px;
             text-shadow: 2px 2px black;
             text-align: center;
