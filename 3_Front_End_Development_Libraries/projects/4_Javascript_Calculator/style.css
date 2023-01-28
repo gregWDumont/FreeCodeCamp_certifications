@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 html, body {
   display: flex;
   align-items: center;
@@ -7,7 +8,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: rgb(126, 72, 72);
-  color: orange;
+  font-family: "Bebas Neue", cursive;
 }
 html .container, body .container {
   margin-top: -300px;
@@ -26,22 +27,21 @@ html .container .calculator, body .container .calculator {
   justify-content: center;
   flex-direction: column;
   background-color: black;
-  border: 4px solid black;
   width: 360px;
   height: 500px;
   padding: 0;
+  border-radius: 2%;
 }
-html .container .calculator #input-container, body .container .calculator #input-container {
+html .container .calculator #output, body .container .calculator #output {
   width: 100%;
-  border: solid 4px black;
   text-align: end;
   padding-right: 10px;
 }
-html .container .calculator #input-container #input-text, body .container .calculator #input-container #input-text {
-  background-color: black;
+html .container .calculator #output #expression, body .container .calculator #output #expression {
   font-size: small;
+  color: orange;
 }
-html .container .calculator #input-container #input-result, body .container .calculator #input-container #input-result {
+html .container .calculator #output #display, body .container .calculator #output #display {
   color: white;
   font-size: 25px;
 }
@@ -58,17 +58,31 @@ html .container .calculator .data-entry button, body .container .calculator .dat
   width: 80px;
   height: 80px;
   color: white;
+  font-size: 30px;
 }
 html .container .calculator .data-entry .btn:hover, body .container .calculator .data-entry .btn:hover {
-  background-color: black;
+  opacity: 0.9;
+}
+html .container .calculator .data-entry .btn:active, body .container .calculator .data-entry .btn:active {
+  background-color: rgb(149, 149, 149);
+  opacity: 1;
+  transform: translateY(1px);
 }
 html .container .calculator .data-entry #btn-top-row, body .container .calculator .data-entry #btn-top-row {
   top: 0;
 }
-html .container .calculator .data-entry #btn-top-row #AC, html .container .calculator .data-entry #btn-top-row #C, body .container .calculator .data-entry #btn-top-row #AC, body .container .calculator .data-entry #btn-top-row #C {
+html .container .calculator .data-entry #btn-top-row #clear-last, html .container .calculator .data-entry #btn-top-row #clear, body .container .calculator .data-entry #btn-top-row #clear-last, body .container .calculator .data-entry #btn-top-row #clear {
   background-color: rgb(172, 57, 57);
 }
-html .container .calculator .data-entry #btn-top-row #divide, html .container .calculator .data-entry #btn-top-row #x, body .container .calculator .data-entry #btn-top-row #divide, body .container .calculator .data-entry #btn-top-row #x {
+html .container .calculator .data-entry #btn-top-row #clear-last:hover, html .container .calculator .data-entry #btn-top-row #clear:hover, html .container .calculator .data-entry #btn-top-row #divide:hover, html .container .calculator .data-entry #btn-top-row #multiply:hover, body .container .calculator .data-entry #btn-top-row #clear-last:hover, body .container .calculator .data-entry #btn-top-row #clear:hover, body .container .calculator .data-entry #btn-top-row #divide:hover, body .container .calculator .data-entry #btn-top-row #multiply:hover {
+  opacity: 0.9;
+}
+html .container .calculator .data-entry #btn-top-row #clear-last:active, html .container .calculator .data-entry #btn-top-row #clear:active, html .container .calculator .data-entry #btn-top-row #divide:active, html .container .calculator .data-entry #btn-top-row #multiply:active, body .container .calculator .data-entry #btn-top-row #clear-last:active, body .container .calculator .data-entry #btn-top-row #clear:active, body .container .calculator .data-entry #btn-top-row #divide:active, body .container .calculator .data-entry #btn-top-row #multiply:active {
+  background-color: rgb(149, 149, 149);
+  opacity: 1;
+  transform: translateY(1px);
+}
+html .container .calculator .data-entry #btn-top-row #divide, html .container .calculator .data-entry #btn-top-row #multiply, body .container .calculator .data-entry #btn-top-row #divide, body .container .calculator .data-entry #btn-top-row #multiply {
   background-color: rgb(102, 102, 102);
 }
 html .container .calculator .data-entry #number-pad, body .container .calculator .data-entry #number-pad {
@@ -85,10 +99,18 @@ html .container .calculator .data-entry #btn-right-column, body .container .calc
   flex-direction: column;
   float: right;
 }
-html .container .calculator .data-entry #btn-right-column #equal, body .container .calculator .data-entry #btn-right-column #equal {
+html .container .calculator .data-entry #btn-right-column #equals, body .container .calculator .data-entry #btn-right-column #equals {
   height: 160px;
   background: rgb(0, 68, 102);
 }
-html .container .calculator .data-entry #btn-right-column #add, html .container .calculator .data-entry #btn-right-column #minus, body .container .calculator .data-entry #btn-right-column #add, body .container .calculator .data-entry #btn-right-column #minus {
+html .container .calculator .data-entry #btn-right-column #add, html .container .calculator .data-entry #btn-right-column #subtract, body .container .calculator .data-entry #btn-right-column #add, body .container .calculator .data-entry #btn-right-column #subtract {
   background-color: rgb(102, 102, 102);
+}
+html .container .calculator .data-entry #btn-right-column #equals:hover, html .container .calculator .data-entry #btn-right-column #add:hover, html .container .calculator .data-entry #btn-right-column #subtract:hover, body .container .calculator .data-entry #btn-right-column #equals:hover, body .container .calculator .data-entry #btn-right-column #add:hover, body .container .calculator .data-entry #btn-right-column #subtract:hover {
+  opacity: 0.9;
+}
+html .container .calculator .data-entry #btn-right-column #equals:active, html .container .calculator .data-entry #btn-right-column #add:active, html .container .calculator .data-entry #btn-right-column #subtract:active, body .container .calculator .data-entry #btn-right-column #equals:active, body .container .calculator .data-entry #btn-right-column #add:active, body .container .calculator .data-entry #btn-right-column #subtract:active {
+  background-color: rgb(149, 149, 149);
+  opacity: 1;
+  transform: translateY(1px);
 }/*# sourceMappingURL=style.css.map */

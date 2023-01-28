@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @mixin center {
     display: flex;
     align-items: center;
@@ -11,7 +13,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: rgb(126, 72, 72);
-    color: orange;
+    font-family: 'Bebas Neue', cursive;
 
     .container {
         margin-top: -300px;
@@ -29,25 +31,24 @@ html, body {
             @include center;
             flex-direction: column;
             background-color: black;
-            border: 4px solid black;
             width: 360px;
             height: 500px;
             padding: 0;
+            border-radius: 2%;
         
         
-            #input-container {
+            #output {
                 width: 100%;
-                border: solid 4px black;
                 text-align: end;
                 padding-right: 10px;
         
-                #input-text {
-                    background-color: black;
+                #expression {
                     font-size: small;
+                    color: orange;
                     
                 }
         
-                #input-result {
+                #display {
                     color: white;
                     font-size: 25px;
                 }
@@ -64,20 +65,37 @@ html, body {
                     width: 80px;
                     height: 80px;
                     color: white;
+                    font-size: 30px;
                 }
 
                 .btn:hover {
-                    background-color: black;
+                    opacity: 0.9;
+                }
+
+                .btn:active {
+                    background-color: rgb(149, 149, 149);
+                    opacity: 1;
+                    transform: translateY(1px);
                 }
 
                 #btn-top-row {
                     top: 0;
 
-                    #AC, #C {
+                    #clear-last, #clear {
                         background-color: rgb(172, 57, 57);
                     }
 
-                    #divide, #x {
+                    #clear-last:hover, #clear:hover, #divide:hover, #multiply:hover {
+                        opacity: 0.9;
+                    }
+
+                    #clear-last:active, #clear:active, #divide:active, #multiply:active {
+                        background-color: rgb(149, 149, 149);
+                        opacity: 1;
+                        transform: translateY(1px);
+                    }
+
+                    #divide, #multiply {
                         background-color: rgb(102, 102, 102);
                     }
                 }
@@ -99,13 +117,23 @@ html, body {
                     flex-direction: column;
                     float: right;
 
-                    #equal {
+                    #equals {
                         height: 160px;
                         background: rgb(0, 68, 102);
                     }
 
-                    #add, #minus {
+                    #add, #subtract {
                         background-color: rgb(102, 102, 102);
+                    }
+
+                    #equals:hover, #add:hover, #subtract:hover {
+                        opacity: 0.9;
+                    }
+
+                    #equals:active, #add:active, #subtract:active {
+                        background-color: rgb(149, 149, 149);
+                        opacity: 1;
+                        transform: translateY(1px);
                     }
                 }
             }
