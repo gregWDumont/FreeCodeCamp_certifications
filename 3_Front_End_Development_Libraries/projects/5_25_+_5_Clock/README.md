@@ -2,7 +2,7 @@
 
 ## Objective: Build an app that is functionally similar to this: https://25--5-clock.freecodecamp.rocks.
 
-## [live version](https://codepen.io/reggr0y/pen/PoBjdLK)
+## [live version](https://codepen.io/reggr0y/pen/zYLaeMZ)
 
 Fulfill the below user stories and get all of the tests to pass. Use whichever libraries or APIs you need. Give it your own personal style.
 
