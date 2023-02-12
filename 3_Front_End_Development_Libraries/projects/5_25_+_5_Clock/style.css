@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap");
 html, body {
   display: flex;
   align-items: center;
@@ -8,16 +8,71 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: rgb(46, 9, 39);
-  font-family: "Bebas Neue", cursive;
-  color: rgb(255, 140, 0);
+  color: rgb(4, 117, 111);
+  font-family: "Chakra Petch", sans-serif;
 }
 html .container, body .container {
   margin-top: -300px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 html .container h1, body .container h1 {
-  font-size: 35px;
-  text-shadow: 2px 2px black;
+  color: rgb(255, 140, 0);
+  font-size: 50px;
+  text-shadow: 2px 2px rgb(217, 0, 0);
   text-align: center;
   margin-bottom: 30px;
   margin-top: 150px;
+}
+html .container h3, body .container h3 {
+  color: rgb(4, 117, 111);
+  font-size: 20px;
+}
+html .container h4, body .container h4 {
+  font-size: 20px;
+}
+html .container button, body .container button {
+  margin: 3px;
+  background-color: rgb(46, 9, 39);
+  color: rgb(255, 140, 0);
+  border: none;
+  font-size: 20px;
+}
+html .container i, body .container i {
+  pointer-events: none;
+}
+html .container .settings-container, body .container .settings-container {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+html .container .settings-container .break-settings, body .container .settings-container .break-settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html .container .settings-container .session-settings, body .container .settings-container .session-settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html .container .display-container, body .container .display-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid rgb(4, 117, 111);
+  border-radius: 6px;
+  width: 75%;
+  margin: 30px 200px;
+  font-size: 30px;
+}
+html .container .commands-container, body .container .commands-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-// https://colordesigner.io/#2E0927-D90000-FF2D00-FF8C00-04756F
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
 
 @mixin center {
     display: flex;
@@ -8,29 +6,85 @@
     justify-content: center;
 }
 
+$base-color: rgb(46, 9, 39);
+$secondary-color: rgb(255, 140, 0);
+$tertiary-color:rgb(217, 0, 0);
+$quaternary-color: rgb(4, 117, 111);
+
 html, body {
     @include center;
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: rgb(46, 9, 39);
-    font-family: 'Bebas Neue', cursive;
-    color: rgb(255, 140, 0);
+    background-color: $base-color;
+    color: $quaternary-color;
+    font-family: 'Chakra Petch', sans-serif;
 
     .container {
         margin-top: -300px;
+        width: 80%;
+        @include center;
+        flex-direction: column;
 
         h1 {
-
-            font-size: 35px;
-            text-shadow: 2px 2px black;
+            color: $secondary-color;
+            font-size: 50px;
+            text-shadow: 2px 2px $tertiary-color;
             text-align: center;
             margin-bottom: 30px;
             margin-top: 150px;
         }
-    }
+
+        h3 {
+            color: $quaternary-color;
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        button {
+            margin: 3px;
+            background-color: $base-color;
+            color: $secondary-color;
+            border: none;
+            font-size: 20px
+        }
+
+        i {
+            pointer-events: none;
+        }
+
+        .settings-container {
+            width: 75%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+
+            .break-settings {
+                @include center;
+            }
+
+            .session-settings {
+                @include center;
+            }
+        }
+
+        .display-container {
+            @include center;
+            flex-direction: column;
+            border: 2px solid $quaternary-color;
+            border-radius: 6px;
+            width: 75%;
+            margin: 30px 200px;
+            font-size: 30px;
+        }
+
+        .commands-container {
+            @include center;
+        }
+    }    
 }
-
-
-
