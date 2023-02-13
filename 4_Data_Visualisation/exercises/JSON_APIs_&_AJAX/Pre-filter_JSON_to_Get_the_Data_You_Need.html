@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <title>Document</title>
+    <title>Pre-filter JSON to Get the Data You Need</title>
 </head>
 <html>
     <body>
@@ -13,24 +13,24 @@
             document.addEventListener('DOMContentLoaded', function(){
               document.getElementById('getMessage').onclick = function(){
                 const req = new XMLHttpRequest();
-                req.open("GET",'/json/cats.json',true);
+                req.open("GET",'/json/cats.json', true);
                 req.send();
-                req.onload = function(){
-                  const json = JSON.parse(req.responseText);
+                req.onload=function(){
+                  let json = JSON.parse(req.responseText);
                   let html = "";
-                  // Add your code below this line
-                  json.forEach(function(val) {
-                  const keys = Object.keys(val)
-                  html += "<div class = 'cat'>"
-                      keys.map(function(key) {
-                        html += "<strong>" + key + "</strong>: " + val[key] + "<br>";
-                        });
-                      html += "</div><br>";
-                      });
-                  // Add your code above this line
-                  document.getElementsByClassName('message')[0].innerHTML = html;
-                };
-              };
+                  json = json.filter(function(val) {
+                    return (val.id !== 1);
+                  });
+                   json.forEach(function(val) {
+                     html += "<div class = 'cat'>"
+          
+                     html += "<img src = '" + val.imageLink + "' " + "alt='" + val.altText + "'>"
+          
+                     html += "</div>"
+                   });
+                   document.getElementsByClassName('message')[0].innerHTML = html;
+                 };
+               };
             });
           </script>
           

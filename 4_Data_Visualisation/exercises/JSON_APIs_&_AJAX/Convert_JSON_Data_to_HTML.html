@@ -5,30 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <title>Document</title>
+    <title>Convert JSON Data to HTML</title>
 </head>
 <html>
     <body>
         <script>
             document.addEventListener('DOMContentLoaded', function(){
               document.getElementById('getMessage').onclick = function(){
-                const req=new XMLHttpRequest();
+                const req = new XMLHttpRequest();
                 req.open("GET",'/json/cats.json',true);
                 req.send();
                 req.onload = function(){
                   const json = JSON.parse(req.responseText);
                   let html = "";
                   json.forEach(function(val) {
-                    html += "<div class = 'cat'>";
-                    const keys = Object.keys(val);
-                    keys.map(function(key) {
-                      html += "<img src= '" + val.imageLink + "'" + "alt= '" + val.altText + "'>"
-                    })
-                    html += "</div><br>";
-                  });
-                  document.getElementsByClassName('message')[0].innerHTML=html;
+                  const keys = Object.keys(val)
+                  html += "<div class = 'cat'>"
+                      keys.map(function(key) {
+                        html += "<strong>" + key + "</strong>: " + val[key] + "<br>";
+                        });
+                      html += "</div><br>";
+                      });
+                  document.getElementsByClassName('message')[0].innerHTML = html;
                 };
-               };
+              };
             });
           </script>
           
@@ -58,6 +58,7 @@
               border: 1px solid #0F5897;
             }
           </style>
+          
           <h1>Cat Photo Finder</h1>
           <p class="message box">
             The message will go here
