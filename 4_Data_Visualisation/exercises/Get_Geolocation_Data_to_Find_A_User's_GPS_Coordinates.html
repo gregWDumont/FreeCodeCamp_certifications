@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>Document</title>
+</head>
+<html>
+    <body>
+        <script>
+            if (navigator.geolocation){
+              navigator.geolocation.getCurrentPosition(function(position) {
+                document.getElementById('data').innerHTML="latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude;
+              });
+            }
+          </script>
+          <h4>You are here:</h4>
+          <div id="data">
+          
+          </div>
+    </body>
+</html>
