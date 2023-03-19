@@ -1,0 +1,62 @@
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+$base-color: rgb(255, 255, 255);
+$secondary-color: rgb(222, 186, 76);
+$tertiary-color:rgb(0, 0, 0);
+$quaternary-color: rgb(7, 13, 172);
+
+html, body {
+    @include center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: $base-color;
+    color: $quaternary-color;
+    font-family: 'Chakra Petch', sans-serif;
+
+    #root.container {
+        width: 90%;
+		border: 1px $quaternary-color solid;
+
+		.dataContainer {
+			@include center;
+			flex-direction: column;
+			width: 90%;
+			border: 1px $quaternary-color solid;
+
+			h1 {
+				color: $secondary-color;
+				font-size: 50px;
+				text-shadow: 1px 2px $tertiary-color;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+
+			#graph {
+				padding: 50px;
+				border: solid 2px $secondary-color;
+			}
+
+			#tooltip {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: absolute;
+				width: 100px;
+				height: 30px;
+				padding: 10px;
+				font-size: 12px;
+				color: $base-color;
+				background-color: $quaternary-color;
+				box-shadow: 1px 1px 10px;
+				border-radius: 2px;
+				pointer-events: none;
+			}
+		}
+    }
+}

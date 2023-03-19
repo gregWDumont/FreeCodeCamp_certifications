@@ -1,0 +1,50 @@
+html, body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(7, 13, 172);
+  font-family: "Chakra Petch", sans-serif;
+}
+html #root.container, body #root.container {
+  width: 90%;
+  border: 1px rgb(7, 13, 172) solid;
+}
+html #root.container .dataContainer, body #root.container .dataContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  border: 1px rgb(7, 13, 172) solid;
+}
+html #root.container .dataContainer h1, body #root.container .dataContainer h1 {
+  color: rgb(222, 186, 76);
+  font-size: 50px;
+  text-shadow: 1px 2px rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 30px;
+}
+html #root.container .dataContainer #graph, body #root.container .dataContainer #graph {
+  padding: 50px;
+  border: solid 2px rgb(222, 186, 76);
+}
+html #root.container .dataContainer #tooltip, body #root.container .dataContainer #tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  padding: 10px;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(7, 13, 172);
+  box-shadow: 1px 1px 10px;
+  border-radius: 2px;
+  pointer-events: none;
+}/*# sourceMappingURL=style.css.map */
