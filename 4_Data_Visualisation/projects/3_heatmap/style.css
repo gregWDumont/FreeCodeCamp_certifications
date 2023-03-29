@@ -1,0 +1,16 @@
+.dataContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  .dataContainer h1 {
+	padding: 0;
+	margin: 0;
+	margin-top: 10vh;
+  }
+  .dataContainer #description {
+	padding: 0;
+	margin: 0;
+	margin-top: 2vh;
+  }
