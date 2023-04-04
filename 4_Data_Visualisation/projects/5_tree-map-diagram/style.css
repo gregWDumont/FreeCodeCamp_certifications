@@ -1,0 +1,88 @@
+#root {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  #root .dataContainer {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  #root .dataContainer h1 {
+	font-size: 45px;
+	margin-bottom: 10px;
+  }
+  #root .dataContainer #description {
+	text-align: center;
+	margin: 0;
+	margin-top: 0.5em;
+  }
+  #root .dataContainer button {
+	background: none;
+	color: blue;
+	border: none;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10;
+	cursor: pointer;
+	margin-top: 0.5em;
+  }
+  #root .dataContainer #treemap {
+	margin: 0;
+	padding: 0;
+	margin-left: -100px;
+  }
+  #root .dataContainer .tile {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	pointer-events: auto;
+  }
+  #root .dataContainer .tile-text {
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 10px;
+	font-family: sans-serif;
+  }
+  #root .dataContainer foreignObject {
+	pointer-events: none;
+  }
+  #root .dataContainer #tooltip {
+	position: absolute;
+	background-color: rgb(246, 255, 201);
+	border: #fff;
+	padding: 10px;
+	font-size: 14px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 2px rgb(200, 205, 176);
+	pointer-events: none;
+  }
+  #root .dataContainer #legend {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 600px;
+	justify-content: space-between;
+	grid-column-gap: 20px;
+	margin: 0 auto;
+  }
+  #root .dataContainer .legend-item {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	text-align: center;
+  }
+  #root .dataContainer .legend-color {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 5px;
+  }
+  #root .dataContainer .legend-label {
+	font-size: 15px;
+	font-family: sans-serif;
+  }/*# sourceMappingURL=style.css.map */
