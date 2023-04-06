@@ -6,10 +6,8 @@ FYI: I keep the exercises as reminder | for later purpose while the projects are
 
 ## Certifications
 
-### full-stack dev
-
-- [Responsive Web Design](https://freecodecamp.org/certification/Reggroy/responsive-web-design),
-- [JavaScript-Algorithms-and-Data-Structures](https://www.freecodecamp.org/certification/Reggroy/javascript-algorithms-and-data-structures),
-- [Front End Development Libraries](https://www.freecodecamp.org/certification/Reggroy/front-end-development-libraries),
-- [Data Visualization](https://www.freecodecamp.org/certification/Reggroy/data-visualization),
+- [Responsive Web Design](https://freecodecamp.org/certification/Reggroy/responsive-web-design)
+- [JavaScript-Algorithms-and-Data-Structures](https://www.freecodecamp.org/certification/Reggroy/javascript-algorithms-and-data-structures)
+- [Front End Development Libraries](https://www.freecodecamp.org/certification/Reggroy/front-end-development-libraries)
+- [Data Visualization](https://www.freecodecamp.org/certification/Reggroy/data-visualization)
 - Back End Development and APIs
