@@ -6,8 +6,9 @@ FYI: I keep the exercises as reminder | for later purpose while the projects are
 
 ## Certifications
 
-- [Responsive Web Design](https://freecodecamp.org/certification/Reggroy/responsive-web-design)
-- [JavaScript-Algorithms-and-Data-Structures](https://www.freecodecamp.org/certification/Reggroy/javascript-algorithms-and-data-structures)
-- [Front End Development Libraries](https://www.freecodecamp.org/certification/Reggroy/front-end-development-libraries)
-- [Data Visualization](https://www.freecodecamp.org/certification/Reggroy/data-visualization)
-- Back End Development and APIs
+- [Responsive Web Design](./1_Responsive-Web-Design/)
+- [JavaScript-Algorithms-and-Data-Structures](./2_JavaScript_Algorithms_and_Data_Structures/)
+- [Front End Development Libraries](./3_Front_End_Development_Libraries/)
+- [Data Visualization](./4_Data_Visualisation/)
+- [Back End Development and APIs](./5_Back_End_Development_and_APIs/)
+- [Scientific Computing with Python](./6_Scientific_Computing_Python)
