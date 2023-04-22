@@ -11,7 +11,7 @@
     "url": "git+https://github.com/gregWDumont/FreeCodeCamp_certifications.git#main"
   },
   "author": "Gregory Wawszyniak Dumont",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/gregWDumont/FreeCodeCamp_certifications/issues"
   },
