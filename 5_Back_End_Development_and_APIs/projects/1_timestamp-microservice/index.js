@@ -24,7 +24,7 @@ const getTimestamp = (date) => ({
 });
 
 // your API endpoint...
-app.get("/api/timestamp/:dateString?", (req, res) => {
+app.get("/api/:dateString?", (req, res) => {
   const { dateString } = req.params;
   let timestamp;
 
