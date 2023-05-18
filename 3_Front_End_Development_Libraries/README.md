@@ -6,4 +6,4 @@ In the Front End Development Libraries Certification, you'll learn how to style 
 
 Later, you'll build a shopping cart and other applications to learn how to create powerful Single Page Applications (SPAs) with React and Redux."
 
-[Link to the certification](https://www.freecodecamp.org/certification/Reggroy/front-end-development-libraries)
+[Link to the certification](https://www.freecodecamp.org/certification/GregWDumont/front-end-development-libraries)

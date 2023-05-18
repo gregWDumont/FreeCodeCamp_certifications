@@ -6,4 +6,4 @@ In the Data Visualization Certification, you'll build charts, graphs, and maps t
 
 You'll also learn about JSON (JavaScript Object Notation), and how to work with data online using an API (Application Programming Interface)."
 
-[Link to the certification](https://www.freecodecamp.org/certification/Reggroy/data-visualization)
+[Link to the certification](https://www.freecodecamp.org/certification/GregWDumont/data-visualization)
